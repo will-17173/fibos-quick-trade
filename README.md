@@ -27,3 +27,30 @@ fibos eosin 1.0000
 ```bash
 fibos eosout 1.0000
 ```
+### EOS换FO
+参数定义： 
+1. all: 换全部EOS 
+2. half：换一半EOS
+3. quarter: 换1/4EOS
+4. 具体数值
+
+```
+fibos eos2fo all
+fibos eos2fo half
+fibos eos2fo quarter
+fibos eos2fo 999.0000
+```
+
+### FO换EOS
+参数定义： 
+1. all: 换全部FO 
+2. half：换一半FO
+3. quarter: 换1/4FO
+4. 具体数值
+
+```
+fibos fo2eos all
+fibos fo2eos half
+fibos fo2eos quarter
+fibos fo2eos 999.0000
+```
