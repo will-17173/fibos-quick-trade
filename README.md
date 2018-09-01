@@ -63,3 +63,30 @@ fibos ramprice
 ```bash
 fibos ram
 ```
+
+### 买内存
+参数定义： 
+1. all: 把全部FO换内存
+2. half：换一半FO
+3. quarter: 换1/4FO
+4. 具体数值
+```bash
+fibos buyram all
+fibos buyram half
+fibos buyram quarter
+fibos buyram 10000.0000
+```
+
+###卖内存
+
+参数定义： 
+1. all: 卖掉全部
+2. half：卖一半
+3. quarter: 卖1/4
+4. 具体数值: 单位是字节
+```bash
+fibos sellram all
+fibos sellram half
+fibos sellram quarter
+fibos sellram 9999
+```

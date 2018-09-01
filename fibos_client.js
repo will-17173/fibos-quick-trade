@@ -128,9 +128,9 @@ var FibosClient = module.exports = function (config) {
         return res;
     };
 
-    this.sellram = function (receiver, bytes) {
+    this.sellram = function (bytes) {
         var self = this;
-        var res = self.fibosClient.sellramSync(receiver, bytes)
+        var res = self.fibosClient.sellramSync(self.fibosAccount, bytes)
         return res
     }
 
