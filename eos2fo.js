@@ -1,9 +1,19 @@
 const client = require('./client')
 const balance = require('./balance')
+const amount = process.argv[2];
 
+if(amount == 'all'){
+    amount = balance.eos;
+} else if(amount == 'half'){
+    amount = (balance.eos / 2).toFixed(4);
+} else if(amount == 'quarter'){
+    amount = (balance.eos / 4).toFixed(4);
+} else{
+    if(!/^[0-9]+\.[0-9]{4}$/.test(amount)){
+        console.error('请输入正确的转帐数值，精确到小数点后4位');
+        return;
+    }
+}
 
-
-console.log(balance)
-
-// var res = client.exchangeFO("1.0000 EOS");
-// console.log(res);
+var res = client.exchangeFO(amount + " EOS");
+console.log(res);
