@@ -18,3 +18,8 @@ if(amount == 'all'){
 
 var res = client.sellram(amount)
 console.log(res);
+if(res.broadcast){
+    console.log('交易成功')
+} else{
+    console.error('交易失败')
+}
