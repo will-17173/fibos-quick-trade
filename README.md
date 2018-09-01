@@ -34,7 +34,7 @@ fibos eosout 1.0000
 3. quarter: 换1/4EOS
 4. 具体数值
 
-```
+```bash
 fibos eos2fo all
 fibos eos2fo half
 fibos eos2fo quarter
@@ -48,9 +48,18 @@ fibos eos2fo 999.0000
 3. quarter: 换1/4FO
 4. 具体数值
 
-```
+```bash
 fibos fo2eos all
 fibos fo2eos half
 fibos fo2eos quarter
 fibos fo2eos 999.0000
+```
+### 查询内存价格
+每秒输出一次当前内存价格
+```bash
+fibos ramprice
+```
+### 查询帐户内存
+```bash
+fibos ram
 ```

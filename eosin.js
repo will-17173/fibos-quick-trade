@@ -9,4 +9,6 @@ var res = client.transferEOS(amount + " EOS");
 console.log(res)
 if(res.broadcast){
     console.log('EOS主链转帐到FIBOS成功')
+} else{
+    console.error('交易失败')
 }

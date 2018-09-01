@@ -143,9 +143,9 @@ var FibosClient = module.exports = function (config) {
         return price + " FO/KB"
     }
 
-    this.getAccount = function (account) {
+    this.getAccount = function () {
         var self = this;
-        return self.fibosClient.getAccountSync(account)
+        return self.fibosClient.getAccountSync(self.fibosAccount)
     }
 
 }).call(FibosClient.prototype);
