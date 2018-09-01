@@ -121,10 +121,10 @@ var FibosClient = module.exports = function (config) {
         return res;
     }
 
-    // "acount", "acount", "100.0000 FO"
-    this.buyram = function (payer, receiver, value) {
+    // "100.0000 FO"
+    this.buyram = function (value) {
         var self = this;
-        var res = self.fibosClient.buyramSync(payer, receiver, value)
+        var res = self.fibosClient.buyramSync(self.fibosAccount, self.fibosAccount, value)
         return res;
     };
 
