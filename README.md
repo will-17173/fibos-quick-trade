@@ -17,3 +17,13 @@ fibos price
 ```bash
 fibos balance
 ```
+### EOS主链转帐到FIBOS侧链
+数值必填
+```bash
+fibos eosin 1.0000
+```
+### FIBOS转帐到EOS主链
+数值必填
+```bash
+fibos eosout 1.0000
+```
