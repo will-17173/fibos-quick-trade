@@ -1,6 +1,6 @@
 const client = require('./client')
 const balance = require('./balance')
-const amount = process.argv[2];
+let amount = process.argv[2];
 
 if(amount == 'all'){
     amount = balance.eos;

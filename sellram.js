@@ -1,5 +1,5 @@
 const client = require('./client');
-const amount = process.argv[2];
+let amount = process.argv[2];
 const balance = require('./ram')
 const available = balance.available;
 
