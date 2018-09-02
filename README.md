@@ -11,7 +11,7 @@
 ### 查询价格
 每秒输出当前实时价格
 ```bash
-fibos price
+node price
 ```
 ### 查询帐户余额
 ```bash
