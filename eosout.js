@@ -7,7 +7,7 @@ if(!/^[0-9]+\.[0-9]{4}$/.test(amount)){
 }
 
 var res = client.withdrawEOS(amount + " EOS")
-console.log(res)
+// console.log(res)
 if(res.broadcast){
     console.log('FIBOS转帐到EOS主链成功')
 } else{

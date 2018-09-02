@@ -16,7 +16,7 @@ if(amount == 'all'){
 }
 
 var res = client.exchangeEOS(amount + " FO");
-console.log(res);
+// console.log(res);
 if(res.broadcast){
     console.log('交易成功')
 } else{
