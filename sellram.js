@@ -10,7 +10,7 @@ if(amount == 'all'){
 } else if(amount == 'quarter'){
     amount = Math.floor(available / 4);
 } else{
-    if(!isNaN(amount)){
+    if(isNaN(amount)){
         console.error('请输入正确的数值');
         return;
     }
